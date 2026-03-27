@@ -1,0 +1,10 @@
+[project]
+entrypoint = "public/index.html"
+
+[dev]
+build = ["go", "build", "-o", "chat-server", "main.go"]
+run = ["./chat-server"]
+
+[deploy]
+build = ["echo", "Binary already built"]
+run = ["./chat-server"]
